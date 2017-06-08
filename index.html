@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Shopping List - A Learn Teach Code Project</title>
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+		<meta name="description" content="LTC Shopping List"/>
+		<meta name="author" content="Nasty Person"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Stylesheets -->
+		<link href='http://fonts.googleapis.com/css?family=Rancho' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/style.css"/> 
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="javascrip/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="javascrip/jquery-ui.js"></script>
+		<script type="text/javascript" src="javascrip/app.js"></script>
+	
+	</head>
+	<body>
+		<section class="left">
+			<header>
+				<a href="index.html" class="logo"></a>
+				<h1>Learn Teach Code Shopping list</h1>
+			</header>
+			<div class="count-container">
+				<hr>
+				<p class="count"><span id="do">0</span> DO</p>
+				<hr>
+				<p class="count"><span id="done">0</span> DONE</p>
+				<hr>
+				<p class="count"><span id="total">0</span> TOTAL</p>
+				<hr>
+			</div>
+			<footer>
+				<p>Crafted with <span class="love"> &#9829; </span> by <a href="http://www.learnteachcode.org">Nasty Woman.</a> I need more friends</p>
+			</footer>
+		</section>
+
+		<section class="right"> <!-- App Section -->
+			<form>
+				<input type="text" name="newItem" id="newItem" class="textBox" autocomplete="off" placeholder="Type here.." required/>
+			</form>
+			
+			<ul id="list">
+				<li class="listitem">
+					<span class="item">Tap to check off.</span>
+					<div class="delete"></div>
+				</li>
+				<li class="listitem checked">
+					<span class="item">I 'm checked off.</span>
+					<div class="delete"></div>
+				</li>
+				<li class="listitem">
+					<span class="item">Tap &amp; Drag me.</span>
+					<div class="delete"></div>
+				</li>
+				<li class="listitem">
+					<span class="item">Tap X &amp; I'll be gone.</span>
+					<div class="delete"></div>
+				</li>
+			</ul>
+
+		</section>
+	</body>
+</html>
